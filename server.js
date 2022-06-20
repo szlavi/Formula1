@@ -7,7 +7,7 @@ const port = 5000
 let places = [...Array(21).keys()]
 
 drivers.forEach(element => {
-    element.imgUrl = `/static/${element.code.toLowerCase()}.png`
+    element.imgUrl = `./static/${element.code.toLowerCase()}.png`
 
     placeIndex = Math.floor(Math.random() * places.length)
     element.place = places[placeIndex] + 1
