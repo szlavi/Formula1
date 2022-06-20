@@ -1,0 +1,27 @@
+{
+  "name": "formula1",
+  "version": "1.0.0",
+  "description": "Formula 1 Tracker",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/szlavi/Formula1.git"
+  },
+  "author": "Szlavikovics Máté",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/szlavi/Formula1/issues"
+  },
+  "homepage": "https://github.com/szlavi/Formula1#readme",
+  "dependencies": {
+    "concurrently": "^7.2.2",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
