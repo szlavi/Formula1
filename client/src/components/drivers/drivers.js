@@ -32,6 +32,7 @@ class Drivers extends React.Component {
                         <div key={driver.id} className='driver'>
                             <img alt={driver.firstname} />
                             <h2>{driver.firstname} {driver.lastname} - {driver.code}</h2>
+                            <p>Team {driver.team}</p>
                             <p>Place {driver.place}</p>
                             <button onClick={(e) => this.handleOvertake(driver.id, e)}>OVERTAKE</button>
                         </div>
