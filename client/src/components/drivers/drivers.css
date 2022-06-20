@@ -4,8 +4,9 @@
 }
 
 .driver {
-    max-width: 600px;
-    margin: 25px auto;
+    display: inline-block;
+    width: 400px;
+    margin: 25px 30px;
     padding: 25px 10px;
     border: 2px solid rgba(75, 107, 195, 1);
     border-radius: 30px;
