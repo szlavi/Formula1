@@ -25,6 +25,7 @@ class Drivers extends React.Component {
 
     render() {
         console.log(this.state.drivers)
+        console.log(this.state.firstDriver)
 
         return (
             <div className='drivers'>
@@ -32,8 +33,8 @@ class Drivers extends React.Component {
                     return (
                         <div key={driver.id} className='driver'>
                             <h2>{driver.firstname} {driver.lastname} - {driver.code}</h2>
-                            <p>Team <span class='italic'>{driver.team}</span></p>
-                            <p>Place <span class='bold'>{driver.place}</span></p>
+                            <p>Team <span className='italic'>{driver.team}</span></p>
+                            <p>Place <span className='bold'>{driver.place}</span></p>
                             <button onClick={(e) => this.handleOvertake(driver.id, e)}>OVERTAKE</button>
                         </div>
                     )
