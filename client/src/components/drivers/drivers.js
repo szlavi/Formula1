@@ -1,3 +1,4 @@
+import './drivers.css'
 import React from 'react'
 
 class Drivers extends React.Component {
@@ -30,10 +31,9 @@ class Drivers extends React.Component {
                 {this.state.drivers.map(driver => {
                     return (
                         <div key={driver.id} className='driver'>
-                            <img alt={driver.firstname} />
                             <h2>{driver.firstname} {driver.lastname} - {driver.code}</h2>
-                            <p>Team {driver.team}</p>
-                            <p>Place {driver.place}</p>
+                            <p>Team <span class='italic'>{driver.team}</span></p>
+                            <p>Place <span class='bold'>{driver.place}</span></p>
                             <button onClick={(e) => this.handleOvertake(driver.id, e)}>OVERTAKE</button>
                         </div>
                     )
